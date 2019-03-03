@@ -1,0 +1,9 @@
+Potøebuji aby se po kliknutí na èetl popup, aktivoval se script payload.js což se mi povedlo, dále potøebuji aby popup.htlm mìl tlaèítka na kterých bude fungovat funkce:  
+
+        $('#menu1').click(function() {
+        console.log('popis ');
+        if ($('zadám pozdìji')) $('zadám pozdìji').click()
+
+
+
+Moc dìkuji za pomoc èlovìèe :)

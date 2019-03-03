@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "test",
+	"description": "ovladac tlacitek",
+	"version": "1.0",
+	
+
+	"background": {
+		"scripts": ["payload.js"],
+		"persistent": true
+	},
+  "web_accessible_resources": [ "payload.js", "popup.js" ],
+  " Content-Security-Policy": ["style-src 'self'; script-src https://www.google-analytics 'self' data: blob: https:; img-src 'self' data: https:; font-src 'self' https: data: blob:; media-src 'self' https: data: blob:; connect-src 'self' https:; object-src 'none';"],
+	"permissions": [ "tabs", "<all_urls>" ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
